@@ -41,7 +41,32 @@ Set up environment variables (such as .env) or configuration files with your API
 TBD
 
 #### NodeJS: ZIP Archive
-TBD
+
+To package your NodeJS project (`qn-token-metadata-parser`) into a ZIP archive with all dependencies included, follow these steps:
+
+1. **Navigate to your project directory:**
+    ```bash
+    cd qn-token-metadata-parser
+    ```
+
+2. **Install project dependencies:**
+    Ensure that you have npm installed on your system. Run the following command to install dependencies:
+    ```bash
+    npm install
+    ```
+
+3. **Modify the .env file:**
+    Create or update your .env file with the QuickNode endpoint URL. You can obtain an endpoint from QuickNode by [visiting QuickNode dashboard](https://dashboard.quicknode.com/endpoints). Replace XXX with your actual QuickNode endpoint URL:
+    ```
+    # Replace 'XXX' with your actual QuickNode URL
+    QUICKNODE_URL="XXX"
+    ``` 
+
+4. **Build the project:**
+    This step compiles your JavaScript files using Webpack and outputs the built files in the dist directory, and creates a ZIP package with .env and JS files ready to be used in Functions. Execute the following command:
+    ```bash
+    npm run build
+    ```
 
 #### Python: Single Script
 TBD
